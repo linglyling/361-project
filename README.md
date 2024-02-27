@@ -4,18 +4,22 @@ The microservice reads a JSON file (named "schedule.students.json") in the forma
 Here is an example of a way to request data from the microservice, called "MakeCalendar.py".
 
 ##############################################################
+
 import subprocess
 
 subprocess.run(["python", "MakeCalendar.py"])
+
 ##############################################################
 
 You would then have a file called calendar.json. There are many ways to get information from a json file. Here is an example of one way:
 
 ##############################################################
+
 import json
 with open('calendar.json', 'r') as infile:
     calendar = json.load(infile)
 print(calendar)
+
 ##############################################################
 
 UML diagram:
